@@ -28,7 +28,7 @@ prepare() {
 build() {
   cd ImageMagick-${pkgver%.*}-${pkgver##*.}
   ./configure --prefix=/usr --sysconfdir=/etc --with-modules --disable-static \
-    --enable-hdri --with-wmf --with-openexr --with-xml --with-lcms2 --with-jp2 \
+    --disable-hdri --with-wmf --with-openexr --with-xml --with-lcms2 --with-jp2 \
     --with-webp --with-gslib --with-gs-font-dir=/usr/share/fonts/Type1 \
     --with-perl --with-perl-options="INSTALLDIRS=vendor" --with-lqr --with-rsvg \
     --enable-opencl --without-gvc --without-djvu --without-autotrace \
